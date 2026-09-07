@@ -29,7 +29,7 @@ export default function FullBlogArticle({
     }
   };
 
-  const SMART_LINK_URL = 'https://www.profitableratecpmnetwork.com/sx0z4q13?key=f4e974c00255faab0c07ada0028ae896';
+  const SMART_LINK_URL = 'https://www.profitableratecpmnetwork.com/kzmr1v7ace?key=bb816992e7bde9ff8588effb89c2c8d4';
 
   const scrollToBottomNext = () => {
     try {
@@ -76,7 +76,7 @@ export default function FullBlogArticle({
       </div>
 
       {/* Main Article Content Container */}
-      <div className="p-6 sm:p-10 space-y-6">
+      <div className="p-4 sm:p-8 md:p-10 space-y-6">
         
         {/* 1. Blog Title */}
         <h1 className="text-2xl sm:text-4xl font-extrabold text-gray-900 leading-tight tracking-tight">
@@ -84,66 +84,66 @@ export default function FullBlogArticle({
         </h1>
 
         {/* 2. ROBOT CHECK & CIRCULAR 10-TO-1 COUNTDOWN TIMER BANNER */}
-        <div id="captcha-box" className="bg-gradient-to-r from-red-50/90 via-white to-red-50/90 border border-red-200 rounded-2xl p-4 sm:p-5 flex flex-col md:flex-row md:items-center justify-between gap-4 shadow-sm">
+        <div id="captcha-box" className="bg-gradient-to-r from-red-50/90 via-white to-red-50/90 border border-red-200 rounded-2xl p-3.5 sm:p-5 flex flex-col md:flex-row md:items-center justify-between gap-3 sm:gap-4 shadow-sm w-full max-w-full">
           
-          <div className="flex flex-col sm:flex-row sm:items-center gap-4 flex-1">
+          <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4 flex-1 min-w-0 w-full">
             {!isVerified ? (
               /* --- "I am not a robot" CAPTCHA Box --- */
               <div
                 onClick={onVerify}
-                className={`group flex items-center justify-between border-2 rounded-xl p-3 sm:px-5 sm:py-3.5 bg-white shadow-sm cursor-pointer select-none transition-all ${
+                className={`group w-full flex items-center justify-between border-2 rounded-xl p-2.5 sm:px-5 sm:py-3.5 bg-white shadow-sm cursor-pointer select-none transition-all ${
                   isVerifying
                     ? 'border-amber-400 bg-amber-50/40 scale-[0.99]'
                     : 'border-gray-300 hover:border-red-500 hover:shadow-md hover:scale-[1.01]'
                 }`}
               >
-                <div className="flex items-center space-x-3.5">
+                <div className="flex items-center space-x-2.5 sm:space-x-3.5 min-w-0 flex-1 pr-2">
                   {/* Custom Checkbox Square */}
                   <div
-                    className={`w-7 h-7 rounded-lg border-2 flex items-center justify-center transition-all ${
+                    className={`w-6 h-6 sm:w-7 sm:h-7 rounded-lg border-2 flex items-center justify-center shrink-0 transition-all ${
                       isVerifying
                         ? 'border-amber-500 bg-amber-100'
                         : 'border-gray-400 bg-white group-hover:border-red-600'
                     }`}
                   >
                     {isVerifying && (
-                      <svg className="w-4 h-4 animate-spin text-amber-600" fill="none" viewBox="0 0 24 24">
+                      <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4 animate-spin text-amber-600" fill="none" viewBox="0 0 24 24">
                         <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
                         <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"></path>
                       </svg>
                     )}
                   </div>
 
-                  <div>
-                    <span className="text-sm sm:text-base font-extrabold text-gray-800 group-hover:text-red-600 transition-colors">
+                  <div className="min-w-0 flex-1">
+                    <span className="text-xs sm:text-base font-extrabold text-gray-800 group-hover:text-red-600 transition-colors block truncate sm:whitespace-normal">
                       {isVerifying ? 'Verifying human...' : "I'm not a robot"}
                     </span>
-                    <p className="text-[11px] text-gray-500 font-medium">
+                    <p className="text-[10px] sm:text-[11px] text-gray-500 font-medium truncate sm:whitespace-normal">
                       {isVerifying ? 'Checking security credentials...' : 'Click checkbox to start 10s timer'}
                     </p>
                   </div>
                 </div>
 
                 {/* reCAPTCHA style Badge Icon */}
-                <div className="flex flex-col items-center justify-center pl-4 border-l border-gray-200 text-[10px] text-gray-400 ml-2">
-                  <div className="w-6 h-6 rounded-full bg-red-100 flex items-center justify-center text-red-600 font-black mb-0.5 shadow-sm">
+                <div className="flex flex-col items-center justify-center pl-2.5 sm:pl-4 border-l border-gray-200 text-[9px] sm:text-[10px] text-gray-400 shrink-0">
+                  <div className="w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-red-100 flex items-center justify-center text-red-600 font-black mb-0.5 shadow-sm">
                     🤖
                   </div>
-                  <span className="font-extrabold text-gray-600 tracking-tight">reCAPTCHA</span>
-                  <span className="text-[8px] text-gray-400">Privacy - Terms</span>
+                  <span className="font-extrabold text-gray-600 tracking-tight text-[9px] sm:text-[10px]">reCAPTCHA</span>
+                  <span className="text-[7px] sm:text-[8px] text-gray-400">Privacy - Terms</span>
                 </div>
               </div>
             ) : (
               /* --- Verified & Circular Timer Section --- */
-              <div className="flex items-center space-x-4">
+              <div className="flex items-center space-x-3 sm:space-x-4 min-w-0 w-full">
                 {/* Verified Checkmark Icon */}
-                <div className="w-12 h-12 rounded-2xl bg-emerald-100 border-2 border-emerald-400 flex items-center justify-center text-emerald-600 font-black text-xl shadow-sm shrink-0 animate-fadeIn">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-emerald-100 border-2 border-emerald-400 flex items-center justify-center text-emerald-600 font-black text-lg sm:text-xl shadow-sm shrink-0 animate-fadeIn">
                   ✓
                 </div>
 
                 {/* SVG Countdown Ring */}
-                <div className="relative w-14 h-14 flex items-center justify-center shrink-0">
-                  <svg className="w-14 h-14 transform -rotate-90">
+                <div className="relative w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center shrink-0">
+                  <svg className="w-12 h-12 sm:w-14 sm:h-14 transform -rotate-90" viewBox="0 0 56 56">
                     <circle
                       cx="28"
                       cy="28"
@@ -167,16 +167,16 @@ export default function FullBlogArticle({
                     />
                   </svg>
 
-                  <span className="absolute text-sm font-black text-red-900">
+                  <span className="absolute text-xs sm:text-sm font-black text-red-900">
                     {timeLeft > 0 ? timeLeft : '✓'}
                   </span>
                 </div>
 
-                <div>
-                  <p className="text-xs font-extrabold uppercase tracking-wider text-red-900">
+                <div className="min-w-0 flex-1">
+                  <p className="text-[11px] sm:text-xs font-extrabold uppercase tracking-wider text-red-900 truncate">
                     {isUnlocked ? '🎉 Unlocked' : '⏱️ 10s Timer Running'}
                   </p>
-                  <p className="text-xs text-red-700 font-semibold mt-0.5">
+                  <p className="text-[11px] sm:text-xs text-red-700 font-semibold mt-0.5 line-clamp-2">
                     {isUnlocked
                       ? 'Click Next to scroll down to the bottom.'
                       : `Counting down: ${timeLeft} second${timeLeft === 1 ? '' : 's'} remaining...`}
@@ -187,27 +187,27 @@ export default function FullBlogArticle({
           </div>
 
           {/* Top "Next" Button */}
-          <div>
+          <div className="w-full md:w-auto shrink-0">
             {!isVerified ? (
               <button
                 onClick={onVerify}
-                className="w-full sm:w-auto px-5 py-3 bg-red-100 hover:bg-red-200 text-red-900 text-xs font-extrabold rounded-xl flex items-center justify-center space-x-2 border border-red-300 shadow-sm transition-all active:scale-95"
+                className="w-full md:w-auto px-4 sm:px-5 py-2.5 sm:py-3 bg-red-100 hover:bg-red-200 text-red-900 text-xs font-extrabold rounded-xl flex items-center justify-center space-x-2 border border-red-300 shadow-sm transition-all active:scale-95 text-center"
               >
                 <span>🤖 Check "I'm not a robot"</span>
               </button>
             ) : isUnlocked ? (
               <button
                 onClick={scrollToBottomNext}
-                className="w-full sm:w-auto px-8 py-3 bg-red-600 hover:bg-red-700 text-white font-black text-sm rounded-xl shadow-lg hover:shadow-red-200 transition-all active:scale-95 animate-bounce flex items-center justify-center space-x-2"
+                className="w-full md:w-auto px-6 sm:px-8 py-2.5 sm:py-3 bg-red-600 hover:bg-red-700 text-white font-black text-xs sm:text-sm rounded-xl shadow-lg hover:shadow-red-200 transition-all active:scale-95 animate-bounce flex items-center justify-center space-x-2 text-center"
               >
                 <span>Next</span>
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M19 14l-7 7m0 0l-7-7m7-7V3" />
                 </svg>
               </button>
             ) : (
-              <div className="w-full sm:w-auto px-5 py-3 bg-red-200/70 text-red-800 text-xs font-extrabold rounded-xl flex items-center justify-center space-x-2 border border-red-300">
-                <svg className="w-4 h-4 animate-spin text-red-700" fill="none" viewBox="0 0 24 24">
+              <div className="w-full md:w-auto px-4 sm:px-5 py-2.5 sm:py-3 bg-red-200/70 text-red-800 text-xs font-extrabold rounded-xl flex items-center justify-center space-x-2 border border-red-300 text-center">
+                <svg className="w-4 h-4 animate-spin text-red-700 shrink-0" fill="none" viewBox="0 0 24 24">
                   <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
                   <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"></path>
                 </svg>

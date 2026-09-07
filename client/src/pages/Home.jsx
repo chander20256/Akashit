@@ -58,7 +58,7 @@ export default function Home({ blogId }) {
     return () => clearInterval(timerInterval);
   }, [isVerified, currentPage]);
 
-  const SMART_LINK_URL = 'https://www.profitableratecpmnetwork.com/sx0z4q13?key=f4e974c00255faab0c07ada0028ae896';
+  const SMART_LINK_URL = 'https://www.profitableratecpmnetwork.com/kzmr1v7ace?key=bb816992e7bde9ff8588effb89c2c8d4';
 
   const handleVerify = () => {
     try {
