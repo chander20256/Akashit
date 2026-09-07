@@ -90,8 +90,8 @@ export default function Home({ blogId }) {
       {/* Main Responsive Grid Container */}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
         
-        {/* TOP NATIVE BANNER AD CONTAINER (MOBILE RESPONSIVE) */}
-        <div className="w-full mb-6 flex flex-col items-center justify-center overflow-hidden min-h-[90px] bg-red-50/50 rounded-2xl border border-red-100 p-2 shadow-sm">
+        {/* TOP NATIVE BANNER AD CONTAINER (HIDDEN ON SMALL SCREENS / MOBILE) */}
+        <div className="hidden sm:flex w-full mb-6 flex-col items-center justify-center overflow-hidden min-h-[90px] bg-red-50/50 rounded-2xl border border-red-100 p-2 shadow-sm">
           <span className="text-[10px] uppercase font-bold text-gray-400 tracking-wider mb-1">Sponsored Advertisement</span>
           <div className="w-full flex justify-center max-w-full overflow-x-auto">
             <div id="container-414b535bed788918d2efc4a2d537672b"></div>
