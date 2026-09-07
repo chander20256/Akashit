@@ -1,0 +1,19 @@
+# Root Gitignore Configuration - Excludes node_modules, build outputs, and environment files
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Node modules
+node_modules/
+client/node_modules/
+
+# Production build outputs
+dist/
+client/dist/
+
+# OS / Editor
+.DS_Store
+.vscode/
+.idea/
+*.local
