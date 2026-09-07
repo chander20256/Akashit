@@ -1,0 +1,8 @@
+/* Main Global CSS Directives & Tailwind v4 Theme Rules */
+@import "tailwindcss";
+
+body {
+  background-color: #ffffff;
+  color: #111827;
+  min-height: 100vh;
+}
