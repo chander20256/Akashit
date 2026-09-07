@@ -14,6 +14,7 @@ export default function Pagination({
   onVerify
 }) {
   const isUnlocked = isVerified && timeLeft === 0;
+  const isLastPage = currentPage === totalPages;
   const SMART_LINK_URL = 'https://www.profitableratecpmnetwork.com/sx0z4q13?key=f4e974c00255faab0c07ada0028ae896';
 
   const handleNextClick = (newPage) => {
