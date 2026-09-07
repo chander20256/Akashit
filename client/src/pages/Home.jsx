@@ -88,8 +88,16 @@ export default function Home({ blogId }) {
       <Navbar searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
 
       {/* Main Responsive Grid Container */}
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
         
+        {/* TOP NATIVE BANNER AD CONTAINER (MOBILE RESPONSIVE) */}
+        <div className="w-full mb-6 flex flex-col items-center justify-center overflow-hidden min-h-[90px] bg-red-50/50 rounded-2xl border border-red-100 p-2 shadow-sm">
+          <span className="text-[10px] uppercase font-bold text-gray-400 tracking-wider mb-1">Sponsored Advertisement</span>
+          <div className="w-full flex justify-center max-w-full overflow-x-auto">
+            <div id="container-414b535bed788918d2efc4a2d537672b"></div>
+          </div>
+        </div>
+
         {/* Dual Column Layout: Left (Full Blog Page) + Right (Latest Blogs Sidebar) */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
           
@@ -117,6 +125,14 @@ export default function Home({ blogId }) {
               timeLeft={timeLeft}
               onVerify={handleVerify}
             />
+
+            {/* BOTTOM NATIVE BANNER AD CONTAINER (MOBILE RESPONSIVE) */}
+            <div className="w-full mt-8 flex flex-col items-center justify-center overflow-hidden min-h-[90px] bg-red-50/50 rounded-2xl border border-red-100 p-2 shadow-sm">
+              <span className="text-[10px] uppercase font-bold text-gray-400 tracking-wider mb-1">Sponsored Advertisement</span>
+              <div className="w-full flex justify-center max-w-full overflow-x-auto">
+                <div id="container-414b535bed788918d2efc4a2d537672b"></div>
+              </div>
+            </div>
 
           </section>
 
