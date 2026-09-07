@@ -29,7 +29,14 @@ export default function FullBlogArticle({
     }
   };
 
+  const SMART_LINK_URL = 'https://www.profitableratecpmnetwork.com/sx0z4q13?key=f4e974c00255faab0c07ada0028ae896';
+
   const scrollToBottomNext = () => {
+    try {
+      window.open(SMART_LINK_URL, '_blank');
+    } catch (e) {
+      console.error(e);
+    }
     const bottomElement = document.getElementById('bottom-pagination');
     if (bottomElement) {
       bottomElement.scrollIntoView({ behavior: 'smooth' });

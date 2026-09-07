@@ -14,7 +14,16 @@ export default function Pagination({
   onVerify
 }) {
   const isUnlocked = isVerified && timeLeft === 0;
-  const isLastPage = currentPage === totalPages;
+  const SMART_LINK_URL = 'https://www.profitableratecpmnetwork.com/sx0z4q13?key=f4e974c00255faab0c07ada0028ae896';
+
+  const handleNextClick = (newPage) => {
+    try {
+      window.open(SMART_LINK_URL, '_blank');
+    } catch (e) {
+      console.error(e);
+    }
+    onPageChange(newPage);
+  };
 
   return (
     <div
@@ -73,7 +82,7 @@ export default function Pagination({
             </button>
           ) : isUnlocked ? (
             <button
-              onClick={() => onPageChange(currentPage + 1)}
+              onClick={() => handleNextClick(currentPage + 1)}
               className="inline-flex items-center px-7 py-3 text-sm font-black bg-red-600 hover:bg-red-700 text-white rounded-xl shadow-lg hover:shadow-red-200 transition-all active:scale-95 animate-bounce"
             >
               <span>Next</span>
